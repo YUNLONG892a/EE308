@@ -6,11 +6,12 @@ import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 public class Task2 {
-
+    //Receive the test code
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-		String txtFile = "/Users/zhaoyunlong/Desktop/EE308/EE308_LAB1-2.txt";
+		String location  = sc.nextLine();
+        int n_value = sc.nextInt();///Users/zhaoyunlong/Desktop/EE308/EE308_LAB1-2.txt
+		String txtFile = location;
         String line = "";
         String line1 = "";
         String[] data = new String[100000];
@@ -29,13 +30,13 @@ public class Task2 {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        if(n == 1) {
+        if(n_value == 1) {
           level1(data,i);
         }
-        else if(n == 2) {
+        else if(n_value == 2) {
           level2(data,i);
         }
-        else if(n == 3) {
+        else if(n_value == 3) {
         level34(data,i);
         }
 	}
