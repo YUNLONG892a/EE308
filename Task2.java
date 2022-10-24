@@ -40,6 +40,7 @@ public class Task2 {
         level34(data,i);
         }
 	}
+	//Calculate the number of keywords in the test code
 	public static void level1(String str[],int n) {
 		int totalnum = 0;
 		String keywords="abstract、assert、boolean、break、byte、case、"
