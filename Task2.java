@@ -105,6 +105,7 @@ public class Task2 {
         System.out.println();
         
 	} 
+	//Calculate the number of "if, else" structures and the number of "if, else if, else" structures
 	public static void level34(String str[],int n) {
 		int ifnum = 0;
 		int it = 0;
