@@ -65,6 +65,7 @@ public class Task2 {
 	    }
         System.out.println("total num: " + totalnum);
 	} 
+	//Calculate the number of "switch case" structure and  the number of "case" corresponding to each group
 	public static void level2(String str[],int n) {
 		int switchnum = 0;
 		int [] num = new int [10000];
