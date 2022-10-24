@@ -1,5 +1,5 @@
 package Lover;
-
+import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -8,6 +8,8 @@ import java.util.regex.Pattern;
 public class Task2 {
 
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
 		String txtFile = "/Users/zhaoyunlong/Desktop/EE308/EE308_LAB1-2.txt";
         String line = "";
         String line1 = "";
@@ -27,11 +29,17 @@ public class Task2 {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        test1(data,i);
-        test11(data,i);
-        test12(data,i);
+        if(n == 1) {
+          level1(data,i);
+        }
+        else if(n == 2) {
+          level2(data,i);
+        }
+        else if(n == 3) {
+        level34(data,i);
+        }
 	}
-	public static void test1(String str[],int n) {
+	public static void level1(String str[],int n) {
 		int totalnum = 0;
 		String keywords="abstract、assert、boolean、break、byte、case、"
                 + "catch、char、class、continue、default、do、double、else、"
@@ -55,7 +63,7 @@ public class Task2 {
 	    }
         System.out.println("total num: " + totalnum);
 	} 
-	public static void test11(String str[],int n) {
+	public static void level2(String str[],int n) {
 		int switchnum = 0;
 		int [] num = new int [10000];
 		int casenum = 0;
@@ -94,7 +102,7 @@ public class Task2 {
         System.out.println();
         
 	} 
-	public static void test12(String str[],int n) {
+	public static void level34(String str[],int n) {
 		int ifnum = 0;
 		int it = 0;
 		boolean [] num = new boolean [10000];
