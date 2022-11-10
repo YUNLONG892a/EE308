@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "212376",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e6d7",
+      "unicode_decimal": 59095
+    },
+    {
+      "icon_id": "1288598",
+      "name": "返回键",
+      "font_class": "fanhuijian",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}
